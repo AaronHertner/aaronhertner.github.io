@@ -7,7 +7,7 @@
     --off-white: rgba(255,255,255,0.95);
 }
 
-/*HTML ELEMENTS*/
+/*HTML ELEMENTS======================================================*/
 html, body{
     margin: 0px;
     padding: 0px;
@@ -15,7 +15,13 @@ html, body{
     font-weight: bold;
     background-color: var(--background-color);
 }   
-/*HTML CLASSES*/
+
+/*HTML CLASSES=======================================================*/
+.container{
+    margin: 20px 20px;
+    color: var(--off-white);
+    animation: transitionIn 2s;
+}
 .nav{
     overflow: hidden; 
     background-image: linear-gradient(to right,
@@ -34,3 +40,15 @@ html, body{
 .nav, a:hover{
     text-shadow: 7px 7px var(--shade);
 }
+
+/*ANIMATIONS=========================================================*/
+@keyframes transitionIn {
+    from{
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
