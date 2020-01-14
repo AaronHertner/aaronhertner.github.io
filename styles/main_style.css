@@ -27,6 +27,9 @@ footer{
     color: var(--off-white);
 }
 /*HTML CLASSES=======================================================*/
+.main-content{
+  margin-left: 260px;
+}
 .contact-info{
   background-color: var(--primary-color);
   font-size: 13px;
