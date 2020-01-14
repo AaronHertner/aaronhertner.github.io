@@ -1,7 +1,7 @@
 :root{
-    --background-color: #2d3436;
-    --primary-color: #40739e;
-    --secondary-color: #1f2f5c;
+    --background-color: #D8CBC7;
+    --primary-color: #B22F00;
+    --secondary-color: #CC3F0C;
     --accent-color: #fdcb6e;
     --shade: rgba(0,0,0,0.35);
     --off-white: rgba(255,255,255,0.95);
@@ -11,10 +11,11 @@
 html, body{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     background-color: var(--background-color);
-}   
+}
 footer{
     font-size: 11px;
     position: fixed;
@@ -26,6 +27,42 @@ footer{
     color: var(--off-white);
 }
 /*HTML CLASSES=======================================================*/
+.contact-info{
+  background-color: var(--primary-color);
+  font-size: 13px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 130px;
+  width: 260px;
+  float: left;
+}
+.wrapper{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+}
+.sidebar{
+  position: relative;
+}
+.sidebar, h1{
+  text-shadow: 2px 2px var(--shade);
+  color: var(--off-white);
+  margin: 0 15px;
+  text-align: center;
+}
+.sidebar ul li{
+  margin-top: 20px;
+  transform: translateX(-10%);
+  text-align: center;
+  list-style-type: none;
+}
 .hamburger{
     display: none;
     float: left;
@@ -48,10 +85,10 @@ footer{
     animation: transitionIn 2s;
 }
 .nav{
-    overflow: hidden; 
+    overflow: hidden;
     background-image: linear-gradient(to right,
      var(--primary-color), var(--secondary-color));
-    
+
 }
 .nav, a{
     padding: 30px;
@@ -64,14 +101,6 @@ footer{
 }
 .nav, a:hover{
     text-shadow: 7px 7px var(--shade);
-}
-@media screen and (max-width: 730px){
-    .nav a{
-        display: none;
-    }
-    .hamburger{
-        display: block;
-    }
 }
 /*ANIMATIONS=========================================================*/
 @keyframes transitionIn {
