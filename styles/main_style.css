@@ -1,7 +1,7 @@
 :root{
     --background-color: #2d3436;
     --primary-color: #40739e;
-    --secondary-color: #273c75;
+    --secondary-color: #1f2f5c;
     --accent-color: #fdcb6e;
     --shade: rgba(0,0,0,0.35);
     --off-white: rgba(255,255,255,0.95);
@@ -17,6 +17,20 @@ html, body{
 }   
 
 /*HTML CLASSES=======================================================*/
+.hamburger{
+    display: none;
+    float: left;
+    cursor: pointer;
+    text-shadow: 3px 3px var(--shade);
+    font-size: 35px;
+    transition: all 0.4s ease;
+}
+.hamburger:hover{
+    text-shadow: 5px 5px var(--shade);
+}
+.drop-down:checked + .hamburger{
+    transform: rotate(90deg);
+}
 .container{
     margin: 20px 20px;
     color: var(--off-white);
@@ -40,7 +54,14 @@ html, body{
 .nav, a:hover{
     text-shadow: 7px 7px var(--shade);
 }
-
+@media screen and (max-width: 730px){
+    .nav a{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
 /*ANIMATIONS=========================================================*/
 @keyframes transitionIn {
     from{
