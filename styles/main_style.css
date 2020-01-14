@@ -24,6 +24,8 @@ html, body{
     text-shadow: 3px 3px var(--shade);
     font-size: 35px;
     transition: all 0.4s ease;
+    outline: none;
+    color: var(--off-white);
 }
 .hamburger:hover{
     text-shadow: 5px 5px var(--shade);
