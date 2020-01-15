@@ -36,6 +36,9 @@ footer{
 .main-content h1{
   text-align: center;
 }
+.main-content ul li{
+  list-style-type: none;
+}
 .contact-info{
   background-color: var(--primary-color);
   font-size: 13px;
