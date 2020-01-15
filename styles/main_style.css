@@ -71,7 +71,7 @@ footer{
   text-align: center;
 }
 .sidebar h1{
-  transform: translateX(-5%);
+  transform: translateX(-10%);
   text-shadow: 2px 2px var(--shade);
   color: var(--off-white);
   margin: 0 15px;
