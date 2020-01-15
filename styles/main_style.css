@@ -28,7 +28,13 @@ footer{
 }
 /*HTML CLASSES=======================================================*/
 .main-content{
-  margin-left: 260px;
+  position: fixed;
+  color: var(--off-white);
+  text-shadow: 2px 2px var(--shade);
+  margin-left: 285px;
+}
+.main-content h1{
+  text-align: center;
 }
 .contact-info{
   background-color: var(--primary-color);
@@ -37,34 +43,54 @@ footer{
   bottom: 0;
   left: 0;
   height: 130px;
-  width: 260px;
+  width: 280px;
   float: left;
 }
+.contact-info a{
+  text-shadow: 1px 1px var(--shade);
+  transition: text-shadow 0.4s ease;
+}
+.contact-info a:hover{
+  text-shadow: 3px 3px var(--shade);
+}
 .wrapper{
+  text-align: center;
   display: flex;
   position: fixed;
   bottom: 0;
   top: 0;
   left: 0;
   height: 100%;
-  width: 260px;
+  width: 280px;
   background-color: var(--secondary-color);
   text-decoration: none;
 }
 .sidebar{
+  color: var(--off-white);
   position: relative;
+  text-align: center;
 }
-.sidebar, h1{
+.sidebar h1{
+  transform: translateX(-5%);
   text-shadow: 2px 2px var(--shade);
   color: var(--off-white);
   margin: 0 15px;
   text-align: center;
 }
+.sidebar ul li a{
+  text-shadow: 2px 2px var(--shade);
+}
 .sidebar ul li{
+  width: 280px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid var(--shade);
   margin-top: 20px;
-  transform: translateX(-10%);
-  text-align: center;
+  transform: translateX(-15%);
   list-style-type: none;
+  transition: background-color 0.4s ease;
+}
+.sidebar ul li:hover{
+  background-color: var(--primary-color);
 }
 .hamburger{
     display: none;
@@ -101,9 +127,6 @@ footer{
     text-transform: uppercase;
     line-height: 35px;
     transition: text-shadow 0.4s ease;
-}
-.nav, a:hover{
-    text-shadow: 7px 7px var(--shade);
 }
 /*ANIMATIONS=========================================================*/
 @keyframes transitionIn {
