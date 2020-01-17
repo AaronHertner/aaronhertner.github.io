@@ -34,6 +34,16 @@ footer{
   margin-left: 285px;
   animation: transitionIn 2s;
 }
+.main-content a{
+  color: var(--offwhite);
+  text-shadow: 1px 1px var(--shade);
+  display:flex;
+  padding: 10px;
+  transition: text-shadow 0.4s ease;
+}
+.main-content  a:hover{
+  text-shadow: 2px 2px var(--shade);
+}
 .main-content h1{
   text-align: center;
 }
