@@ -32,6 +32,7 @@ footer{
   color: var(--off-white);
   text-shadow: 2px 2px var(--shade);
   margin-left: 285px;
+  animation: transitionIn 2s;
 }
 .main-content h1{
   text-align: center;
