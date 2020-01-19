@@ -41,8 +41,7 @@ footer{
 }
 .main-content{
   position: fixed;
-  color: var(--off-white);
-  text-shadow: 2px 2px var(--shade);
+  color: var(--primary-color);
   margin-left: 285px;
   animation: transitionIn 2s;
 }
