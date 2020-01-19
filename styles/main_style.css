@@ -50,10 +50,10 @@ footer{
   text-shadow: 1px 1px var(--shade);
   display:flex;
   padding: 10px;
-  transition: text-shadow 0.4s ease;
+  transition: color 0.4s ease;
 }
 .main-content  a:hover{
-  text-shadow: 2px 2px var(--shade);
+  color: var(--accent-color);
 }
 .main-content h1{
   text-align: center;
@@ -73,10 +73,10 @@ footer{
 }
 .contact-info a{
   text-shadow: 1px 1px var(--shade);
-  transition: text-shadow 0.4s ease;
+  transition: color 0.4s ease;
 }
 .contact-info a:hover{
-  text-shadow: 3px 3px var(--shade);
+  color: var(--accent-color);
 }
 .wrapper{
   text-align: center;
