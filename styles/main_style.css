@@ -1,6 +1,6 @@
 :root{
     --background-color: #D1D1D1;
-    --primary-color: #2F2F2F;
+    --primary-color: rgb(30, 54, 71);
     --secondary-color: #284B63;
     --accent-color: #fdcb6e;
     --shade: rgba(0,0,0,0.35);
@@ -27,6 +27,18 @@ footer{
     color: var(--off-white);
 }
 /*HTML CLASSES=======================================================*/
+.box{
+  vertical-align: top;
+  position: relative;
+  background-color: rgba(255,255,255,0.30);
+  display: inline-block;
+  width: 25%;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px var(--shade);
+  padding: 10px;
+  margin: 15px;
+  top: 0;
+}
 .main-content{
   position: fixed;
   color: var(--off-white);
