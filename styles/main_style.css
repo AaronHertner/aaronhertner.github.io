@@ -26,11 +26,7 @@ footer{
     background-color: var(--shade);
     color: var(--off-white);
 }
-/*HTML CLASSES=======================================================*/
-.solid-line{
-  width: 100%;
-  border-bottom: 1px solid var(--shade);
-}
+/*HTML CLASSES======================================================*/
 .image{
   position: relative;
   display: block;
