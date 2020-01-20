@@ -147,7 +147,7 @@ footer{
 }
 .sidebar ul li:hover{
   background-color: var(--primary-color);
-  border-radius: 30px;
+  border-radius: 40px;
 }
 .hamburger{
     display: none;
