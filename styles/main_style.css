@@ -37,9 +37,9 @@ footer{
   margin-right: auto;
   border-radius: 5px;
   border-bottom: 3px solid var(--shade);
+  transition: all 0.4s ease;
 }
 .image:hover{
-  animation: blow-up 0.5s;
   transform: scale(2);
   z-index: 2;
 }
