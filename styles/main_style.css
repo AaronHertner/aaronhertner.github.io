@@ -1,7 +1,7 @@
 :root{
-    --background-color: #D1D1D1;
-    --primary-color: rgb(30, 54, 71);
-    --secondary-color: #284B63;
+    --background-color: #dfe6e9;
+    --primary-color: #2c2c54;
+    --secondary-color: #40407a;
     --accent-color: #fdcb6e;
     --shade: rgba(0,0,0,0.35);
     --off-white: rgba(255,255,255,0.95);
@@ -78,10 +78,11 @@ footer{
   text-shadow: 1px 1px var(--shade);
   display:flex;
   padding: 10px;
-  transition: color 0.4s ease;
+  transition: all 0.4s ease;
 }
 .main-content  a:hover{
   color: var(--accent-color);
+  transform: translateX(10px);
 }
 .main-content h1{
   text-align: center;
@@ -132,18 +133,21 @@ footer{
 }
 .sidebar ul li a{
   text-shadow: 2px 2px var(--shade);
+  width: 100%;
 }
 .sidebar ul li{
   width: 280px;
   border-top: 1px solid rgba(255,255,255,0.2);
   border-bottom: 1px solid var(--shade);
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   transform: translateX(-15%);
   list-style-type: none;
-  transition: background-color 0.4s ease;
+  transition: all 0.4s ease;
 }
 .sidebar ul li:hover{
   background-color: var(--primary-color);
+  border-radius: 30px;
 }
 .hamburger{
     display: none;
