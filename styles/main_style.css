@@ -1,8 +1,8 @@
 :root{
     --background-color: #dfe6e9;
-    --primary-color: #343a40;
-    --secondary-color: #212529;
-    --accent-color: #52b788;
+    --primary-color: #343a41;
+    --secondary-color: #212528;
+    --accent-color: #52b787;
     --shade: rgba(0,0,0,0.35);
     --off-white: rgba(255,255,255,0.95);
 }
